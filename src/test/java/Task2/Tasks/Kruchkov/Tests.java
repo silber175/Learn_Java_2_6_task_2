@@ -89,34 +89,34 @@ public class Tests {
 
 
            Assertions.assertEquals( fr.doubleValue(), casheNum.doubleValue() , "Неверное вычисление кэш значения 1 метода 1 класса 1 "+fr.doubleValue()+" "+ casheNum.doubleValue());
-           Assertions.assertEquals( casheNum.reverseValue() , fr.reverseValue() , "Неверное вычисление кэш значения 1 метода 2 класса 1 ");
+           Assertions.assertEquals( casheNum.reverseValue() , fr.reverseValue() , "Неверное вычисление кэш значения 1 метода 2 класса 1 "+casheNum.reverseValue() +" "+ fr.reverseValue());
 
-           Assertions.assertEquals( cr.diametr(), casheCr.diametr() , "Неверное вычисление кэш значения 1 метода 1 класса 2 ");
-           Assertions.assertEquals( cr.circusLen(), casheCr.circusLen() , "Неверное вычисление кэш значения 1 метода 2 класса 2 ");
+           Assertions.assertEquals( cr.diametr(), casheCr.diametr() , "Неверное вычисление кэш значения 1 метода 1 класса 2 "+cr.diametr() +" "+casheCr.diametr());
+           Assertions.assertEquals( cr.circusLen(), casheCr.circusLen() , "Неверное вычисление кэш значения 1 метода 2 класса 2 "+cr.circusLen() +" "+ casheCr.circusLen());
 
 
             casheNum.setNum(4);
-           Assertions.assertEquals( fr.doubleValue(), casheNum.doubleValue() , "Неверное вычисление кэш значения 2 метода 1 класса 1");
-           Assertions.assertEquals( casheNum.reverseValue() , fr.reverseValue() , "Неверное вычисление кэш значения 2 метода 2 класса 1 ");
-           Assertions.assertEquals( fr.doubleValue(), casheNum.doubleValue() , "Неверное вычисление кэш значения 3 метода 1 класса 1");
-           Assertions.assertEquals( casheNum.reverseValue() , fr.reverseValue() , "Неверное вычисление кэш значения 3 метода 2 класса 1 ");
+           Assertions.assertEquals( fr.doubleValue(), casheNum.doubleValue() , "Неверное вычисление кэш значения 2 метода 1 класса 1 "+fr.doubleValue()+" "+ casheNum.doubleValue());
+           Assertions.assertEquals( casheNum.reverseValue() , fr.reverseValue() , "Неверное вычисление кэш значения 2 метода 2 класса 1 "+casheNum.reverseValue() +" "+ fr.reverseValue());
+           Assertions.assertEquals( fr.doubleValue(), casheNum.doubleValue() , "Неверное вычисление кэш значения 3 метода 1 класса 1 "+fr.doubleValue()+" "+ casheNum.doubleValue());
+           Assertions.assertEquals( casheNum.reverseValue() , fr.reverseValue() , "Неверное вычисление кэш значения 3 метода 2 класса 1 "+casheNum.reverseValue() +" "+ fr.reverseValue());
 
-           Assertions.assertEquals( cr.diametr(), casheCr.diametr() , "Неверное вычисление кэш значения 2 метода 1 класса 2 ");
-           Assertions.assertEquals( cr.circusLen(), casheCr.circusLen() , "Неверное вычисление кэш значения 2 метода 2 класса 2 ");
-           Assertions.assertEquals( cr.diametr(), casheCr.diametr() , "Неверное вычисление кэш значения 3 метода 1 класса 2 ");
-           Assertions.assertEquals( cr.circusLen(), casheCr.circusLen() , "Неверное вычисление кэш значения 3 метода 2 класса 2 ");
+           Assertions.assertEquals( cr.diametr(), casheCr.diametr() , "Неверное вычисление кэш значения 2 метода 1 класса 2 "+cr.diametr() +" "+casheCr.diametr());
+           Assertions.assertEquals( cr.circusLen(), casheCr.circusLen() , "Неверное вычисление кэш значения 2 метода 2 класса 2 "+cr.circusLen() +" "+ casheCr.circusLen());
+           Assertions.assertEquals( cr.diametr(), casheCr.diametr() , "Неверное вычисление кэш значения 3 метода 1 класса 2 "+cr.diametr() +" "+casheCr.diametr());
+           Assertions.assertEquals( cr.circusLen(), casheCr.circusLen() , "Неверное вычисление кэш значения 3 метода 2 класса 2 "+cr.circusLen() +" "+ casheCr.circusLen());
 
 
             casheNum.setDenum(32);
-           Assertions.assertEquals( fr.doubleValue(), casheNum.doubleValue() , "Неверное вычисление кэш значения 4 метода 1 класса 1");
-           Assertions.assertEquals( casheNum.reverseValue() , fr.reverseValue() , "Неверное вычисление кэш значения 2 метода 4 класса 1 ");
-           Assertions.assertEquals( fr.doubleValue(), casheNum.doubleValue() , "Неверное вычисление кэш значения 4 метода 1 класса 1");
-           Assertions.assertEquals( casheNum.reverseValue() , fr.reverseValue() , "Неверное вычисление кэш значения 4 метода 2 класса 1 ");
+           Assertions.assertEquals( fr.doubleValue(), casheNum.doubleValue() , "Неверное вычисление кэш значения 4 метода 1 класса 1 "+fr.doubleValue()+" "+ casheNum.doubleValue());
+           Assertions.assertEquals( casheNum.reverseValue() , fr.reverseValue() , "Неверное вычисление кэш значения 2 метода 4 класса 1 "+casheNum.reverseValue() +" "+ fr.reverseValue());
+           Assertions.assertEquals( fr.doubleValue(), casheNum.doubleValue() , "Неверное вычисление кэш значения 4 метода 1 класса 1 "+fr.doubleValue()+" "+ casheNum.doubleValue());
+           Assertions.assertEquals( casheNum.reverseValue() , fr.reverseValue() , "Неверное вычисление кэш значения 4 метода 2 класса 1 "+casheNum.reverseValue() +" "+ fr.reverseValue());
 
-           Assertions.assertEquals( cr.diametr(), casheCr.diametr() , "Неверное вычисление кэш значения 5 метода 1 класса 2 ");
-           Assertions.assertEquals( cr.circusLen(), casheCr.circusLen() , "Неверное вычисление кэш значения 5 метода 2 класса 2 ");
-           Assertions.assertEquals( cr.diametr(), casheCr.diametr() , "Неверное вычисление кэш значения 5 метода 1 класса 2 ");
-           Assertions.assertEquals( cr.circusLen(), casheCr.circusLen() , "Неверное вычисление кэш значения 5 метода 2 класса 2 ");
+           Assertions.assertEquals( cr.diametr(), casheCr.diametr() , "Неверное вычисление кэш значения 5 метода 1 класса 2 "+cr.diametr() +" "+casheCr.diametr());
+           Assertions.assertEquals( cr.circusLen(), casheCr.circusLen() , "Неверное вычисление кэш значения 5 метода 2 класса 2 "+cr.circusLen() +" "+ casheCr.circusLen());
+           Assertions.assertEquals( cr.diametr(), casheCr.diametr() , "Неверное вычисление кэш значения 5 метода 1 класса 2 "+cr.diametr() +" "+casheCr.diametr());
+           Assertions.assertEquals( cr.circusLen(), casheCr.circusLen() , "Неверное вычисление кэш значения 5 метода 2 класса 2 "+cr.circusLen() +" "+ casheCr.circusLen());
 
 
         } catch (Exception e) {
@@ -145,15 +145,15 @@ public class Tests {
             throw new  IllegalArgumentException(" Ошибка либо в классе либо в тесте , неудачная инициализация кэша " + e.getLocalizedMessage());
         }
         try {
-           Assertions.assertEquals( fr.doubleValue() , casheNum.doubleValue()  , "Неверное вычисление кэш значения метода 1класса 1 ");
-           Assertions.assertEquals( cr.diametr() , casheCr.diametr() , "Неверное вычисление кэш значения метода 1 класса 2 ");
+           Assertions.assertEquals( fr.doubleValue() , casheNum.doubleValue()  , "Неверное вычисление кэш значения метода 1класса 1 "+fr.doubleValue()+" "+ casheNum.doubleValue());
+           Assertions.assertEquals( cr.diametr() , casheCr.diametr() , "Неверное вычисление кэш значения метода 1 класса 2 "+cr.diametr() +" "+casheCr.diametr());
         }
         catch (Exception e) {
             throw new  IllegalArgumentException(" Ошибка либо в классе либо в тесте , неудачная выборка 1 из  кэша " + e.getLocalizedMessage());
         }
         try {
-           Assertions.assertEquals( casheNum.reverseValue() , fr.reverseValue() , "Неверное вычисление кэш значения метода 2 класса 1 ");
-           Assertions.assertEquals( cr.circusLen() , casheCr.circusLen() , "Неверное вычисление кэш 2-го метода значения метода 2 класса 2 ");
+           Assertions.assertEquals( casheNum.reverseValue() , fr.reverseValue() , "Неверное вычисление кэш значения метода 2 класса 1 "+casheNum.reverseValue() +" "+ fr.reverseValue());
+           Assertions.assertEquals( cr.circusLen() , casheCr.circusLen() , "Неверное вычисление кэш 2-го метода значения метода 2 класса 2 "+cr.circusLen() +" "+ casheCr.circusLen());
 
         }
         catch (Exception e)    {
