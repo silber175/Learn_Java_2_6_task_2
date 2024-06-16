@@ -1,3 +1,5 @@
+package Task2.Tasks.Kruchkov;
+
 public class Fraction implements Fractionable {
     private int num;
     private int denum;

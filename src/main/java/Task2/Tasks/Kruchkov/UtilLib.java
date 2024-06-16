@@ -1,3 +1,5 @@
+package Task2.Tasks.Kruchkov;
+
 import java.lang.reflect.Proxy;
 
 public class UtilLib {

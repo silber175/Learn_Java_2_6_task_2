@@ -1,3 +1,5 @@
+package Task2.Tasks.Kruchkov;
+
 import java.awt.*;
 
 public class Circule implements Circuleable {

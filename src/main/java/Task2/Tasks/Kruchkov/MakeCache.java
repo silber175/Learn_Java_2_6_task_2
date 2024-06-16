@@ -1,3 +1,5 @@
+package Task2.Tasks.Kruchkov;
+
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.util.HashMap;
@@ -6,23 +8,15 @@ import java.util.Map;
 public class MakeCache implements InvocationHandler {
     private Object casheObj;
     private Method objMeth;
-    private  Map<Class, Map<Method, Object>> arrayResult = new HashMap<>();
-    private Map<Method, Object> prevResult;
+     private Map<Method, Object> prevResult = new HashMap<>();
 
     public MakeCache(Object obj) {
-        this.casheObj = obj;
+         this.casheObj = obj;
     }
 
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         objMeth = this.casheObj.getClass().getMethod(method.getName(),method.getParameterTypes());
-        if ( arrayResult.containsKey(casheObj.getClass()) ) {
-            prevResult = arrayResult.get(casheObj.getClass());
 
-        }
-        else {
-            prevResult = new HashMap<>();
-            arrayResult.put(casheObj.getClass(), prevResult);
-        }
         if (objMeth.isAnnotationPresent(Cashe.class))    {
             if (prevResult.containsKey(objMeth))   {
                 return prevResult.get(objMeth);

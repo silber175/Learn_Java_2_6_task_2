@@ -1,3 +1,5 @@
+package Task2.Tasks.Kruchkov;
+
 public class KruchkovTask2 {
     public static void main(String[] args)
             {

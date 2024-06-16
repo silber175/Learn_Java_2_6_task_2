@@ -1,3 +1,5 @@
+package Task2.Tasks.Kruchkov;
+
 public interface Fractionable {
     double doubleValue();
     void setNum(int num);
